@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Programm Chest',
   tagline: 'Einer der größten deutschen Programmier Discord Server',
-  url: 'https://programm-chest.dev',
-  baseUrl: '/',
+  url: 'https://programmchest.github.io',
+  baseUrl: '/website',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
