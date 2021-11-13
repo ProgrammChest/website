@@ -64,7 +64,7 @@ Wer sich nicht daran hält, bekommt einen Mute, Kick oder gegebenenfalls einen B
 
 - User dürfen nur mit Absprache von Inhaber in den Server hinzugefügt werden!
 
-## §3 Ticketregeln:
+## §3 Ticketregeln
 
 §3-1 Ticketgeheimnis
 
@@ -85,6 +85,5 @@ Wer sich nicht daran hält, bekommt einen Mute, Kick oder gegebenenfalls einen B
 §3-5 Tagging
 
 - Im Ticket darfst du kein Team Mitglied Taggen.
-
 
 > Stand: 22.06.2021 7:07 Uhr

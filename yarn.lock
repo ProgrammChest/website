@@ -1735,6 +1735,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@docusaurus/module-type-aliases@npm:^2.0.0-beta.9":
+  version: 2.0.0-beta.ff31de0ff
+  resolution: "@docusaurus/module-type-aliases@npm:2.0.0-beta.ff31de0ff"
+  checksum: c0d87501d7fc1f39f61a52442a4161a7dd6389b5fc84e04b86cf68d3edbf03893f1ccdf650a16320e26adde024dbea757d50bdf765837587b3926dc0f1ba12bc
+  languageName: node
+  linkType: hard
+
 "@docusaurus/plugin-content-blog@npm:2.0.0-beta.9":
   version: 2.0.0-beta.9
   resolution: "@docusaurus/plugin-content-blog@npm:2.0.0-beta.9"
@@ -2375,6 +2382,13 @@ __metadata:
   version: 0.2.0
   resolution: "@trysound/sax@npm:0.2.0"
   checksum: 11226c39b52b391719a2a92e10183e4260d9651f86edced166da1d95f39a0a1eaa470e44d14ac685ccd6d3df7e2002433782872c0feeb260d61e80f21250e65c
+  languageName: node
+  linkType: hard
+
+"@tsconfig/docusaurus@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@tsconfig/docusaurus@npm:1.0.4"
+  checksum: 720ca04baa47cbd7ec9c4f6ce18c5fcc2117a077ceff9fe89b7ac66be4968a9ea37bbf8c72e91e517ed57953b38ce6d1c7e05380623f2c579ae4021fb59f0632
   languageName: node
   linkType: hard
 
@@ -8454,14 +8468,17 @@ __metadata:
   resolution: "programmchest-website@workspace:."
   dependencies:
     "@docusaurus/core": 2.0.0-beta.9
+    "@docusaurus/module-type-aliases": ^2.0.0-beta.9
     "@docusaurus/preset-classic": 2.0.0-beta.9
     "@mdx-js/react": ^1.6.22
     "@svgr/webpack": ^5.5.0
+    "@tsconfig/docusaurus": ^1.0.4
     clsx: ^1.1.1
     file-loader: ^6.2.0
     prism-react-renderer: ^1.2.1
     react: ^17.0.2
     react-dom: ^17.0.2
+    typescript: ^4.4.4
     url-loader: ^4.1.1
   languageName: unknown
   linkType: soft
@@ -10237,6 +10254,26 @@ __metadata:
   dependencies:
     is-typedarray: ^1.0.0
   checksum: 99c11aaa8f45189fcfba6b8a4825fd684a321caa9bd7a76a27cf0c7732c174d198b99f449c52c3818107430b5f41c0ccbbfb75cb2ee3ca4a9451710986d61a60
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.4.4":
+  version: 4.4.4
+  resolution: "typescript@npm:4.4.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 89ecb8436bb48ef5594d49289f5f89103071716b6e4844278f4fb3362856e31203e187a9c76d205c3f0b674d221a058fd28310dbcbcf5d95e9a57229bb5203f1
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.4.4#~builtin<compat/typescript>":
+  version: 4.4.4
+  resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: bd629ad0da4a15d79aaad56baf3ee7d96f6a181760d430ae77f8c5325df7bffd9edee57544a3970e3651e8b796fe03a5838a7eb39c6d46cc3866c0b23d36a0dd
   languageName: node
   linkType: hard
 
