@@ -24,6 +24,11 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg margin--sm"
             to="/docs/intro">
+            Docs
+          </Link>
+          <Link
+            className="button button--info button--lg margin--sm"
+            to="/wiki/intro">
             Wiki
           </Link>
         </div>

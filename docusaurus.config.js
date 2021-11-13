@@ -67,13 +67,13 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {
+          /*{
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: 'Wiki',
             docsPluginId: 'wiki'
-          },
+          },*/
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -90,20 +90,28 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Wiki',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'More',
+            title: 'Links',
             items: [
               {
                 label: 'GitHub',
                 href: 'https://github.com/ProgrammChest',
+              },
+              {
+                label: 'Discord',
+                href: 'https://invite.programm-chest.dev',
+              },
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Imprint',
+                href: 'https://codedoctor.tk/impress.html',
+              },
+              {
+                label: 'Privacy Policy',
+                href: 'https://codedoctor.tk/privacy.html',
               },
             ],
           },
