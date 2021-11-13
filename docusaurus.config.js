@@ -9,7 +9,7 @@ const config = {
   title: 'Programm Chest',
   tagline: 'Einer der größten deutschen Programmier Discord Server',
   url: 'https://programmchest.github.io',
-  baseUrl: '/website/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
