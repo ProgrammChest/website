@@ -38,6 +38,18 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'wiki',
+        path: 'wiki',
+        routeBasePath: 'wiki',
+        sidebarPath: require.resolve('./sidebarsWiki.js'),
+        // ... other options
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -53,7 +65,14 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
+            label: 'Docs',
+          },
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
             label: 'Wiki',
+            docsPluginId: 'wiki'
           },
           {
             href: 'https://github.com/facebook/docusaurus',
