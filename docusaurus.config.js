@@ -9,7 +9,7 @@ const config = {
   title: 'Programm Chest',
   tagline: 'Einer der größten deutschen Programmier Discord Server',
   url: 'https://programmchest.github.io',
-  baseUrl: '/website/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -24,13 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/ProgrammChest/website/edit/main/website/',
+          editUrl: 'https://github.com/ProgrammChest/website/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/ProgrammChest/website/edit/main/website/blog/',
+            'https://github.com/ProgrammChest/website/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -75,7 +75,7 @@ const config = {
             docsPluginId: 'wiki'
           },*/
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ProgrammChest',
             label: 'GitHub',
             position: 'right',
           },
