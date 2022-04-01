@@ -26,12 +26,7 @@ const config = {
           // Please change this to your repo.
           editUrl: 'https://github.com/ProgrammChest/website/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/ProgrammChest/website/edit/main/blog/',
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
