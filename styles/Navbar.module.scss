@@ -1,0 +1,32 @@
+@use "colors";
+
+.navbar {
+    background: colors.$panel;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;;
+}
+.navbarHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbarItems {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    list-style-type: none;
+    gap: 2rem;
+}
+.navbarLink {
+    color: colors.$text;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 0.1rem;
+}
+.navbarCurrentLink {
+    color: colors.$primary;
+    text-decoration: none;
+    border-bottom: 0.1rem solid colors.$primary;
+    padding-bottom: 0;
+}

@@ -1,0 +1,11 @@
+@use "colors";
+@use "fonts";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: colors.$surface;
+  color: colors.$text;
+  font-family: 'Roboto';
+}
