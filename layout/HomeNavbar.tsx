@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 
 
-export default function HomeNavBar() {
+export default function HomeNavbar() {
     return (
         <Navbar items={[{
             name: 'Home',

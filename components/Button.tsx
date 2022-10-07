@@ -5,8 +5,8 @@ type ButtonProps = PropsWithChildren<React.ButtonHTMLAttributes<HTMLButtonElemen
     variant: 'primary' | 'secondary'
 }>
 
-export default function Button({variant, ...props}: ButtonProps) {
+export default function Button({variant, className, ...props}: ButtonProps) {
     return (
-        <button className={classes.btn} {...props} />
+        <button className={classes.btn + ' ' + className} {...props} />
     )
 }

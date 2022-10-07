@@ -1991,6 +1991,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"material-symbols@npm:^0.2.13":
+  version: 0.2.13
+  resolution: "material-symbols@npm:0.2.13"
+  checksum: 3a22d9a71a444debe8125ad7a5f9e4860aacbaa29e7e7786509f91a3f8ba9e78363a0e984b7ac3943707c665848ea26cccd768c0a863e815e8f6b0a69f693cf9
+  languageName: node
+  linkType: hard
+
 "merge2@npm:^1.3.0, merge2@npm:^1.4.1":
   version: 1.4.1
   resolution: "merge2@npm:1.4.1"
@@ -2486,6 +2493,7 @@ __metadata:
     "@types/react-dom": 18.0.6
     eslint: 8.24.0
     eslint-config-next: 12.3.1
+    material-symbols: ^0.2.13
     next: 12.3.1
     react: 18.2.0
     react-dom: 18.2.0

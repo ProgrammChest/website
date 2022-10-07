@@ -4,6 +4,7 @@ $button-color: (
     "primary": colors.$primary,
     "secondary": transparent
 );
+
 .btn {
     padding: 0.5rem 4rem;
     border-radius: 0.8rem;
@@ -20,5 +21,4 @@ $button-color: (
         background: colors.$primary;
         color: colors.$text;
     }
-
 }
