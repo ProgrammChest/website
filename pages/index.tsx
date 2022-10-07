@@ -1,10 +1,14 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Button from '../components/Button'
-import Navbar from '../components/Navbar'
-import HomeNavbar from '../layout/HomeNavbar'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import Button from "../components/Button";
+import Icon from "../components/Icon";
+import Card from "../components/layouts/Card";
+import Container from "../components/layouts/Container";
+import Flex from "../components/layouts/Flex";
+import Text from "../components/layouts/Text";
+import Link from "../components/Link";
+import HomeNavbar from "../layouts/HomeNavbar";
 
 const Home: NextPage = () => {
   return (
@@ -16,62 +20,42 @@ const Home: NextPage = () => {
       </Head>
 
       <HomeNavbar />
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-        <Button variant='primary'>Join</Button>
+      <main>
+        <Container size="large">
+          <Image width={256} height={256} src="/logo.svg" alt="logo" />
+          <Text variant="big">Willkommen auf Programm Chest</Text>
+          <Text variant="caption">
+            Dem größten Programmier-Discord im deutschsprachigen Raum!
+          </Text>
+          <Link href="https://invite.programm-chest.dev" variant="primary">Join</Link>
+        </Container>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
+        <Flex alignItems="stretch" flexWrap="wrap" justifyContent="center" gap={12}>
+          <Card title="Hilfsbereite Community" icon="live_help">
+            Da wir viele Programmierer aus den unterschiedlichsten Bereichen und Themengebieten bei uns versammeln, wird sich sicherlich jemand finden, der die passende Lösung für dein Problem bereithält
+          </Card>
+          
+          <Card title="Erfahrung" icon="schedule">
+            Seit nun mehr als 3 Jahren kümmert sich unser Team gemeinsam mit unserer Community um Anliegen anderer Mitglieder.
+          </Card>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Card title="Gemeinschaft" icon="diversity_1">
+            Abseits von Fragen und Hilfe gibt es bei uns auch so manch eine hitzige Diskussion oder ein interessantes Gespräch. Auch Memes, Witze oder interessante Neuigkeiten sind bei uns natürlich gerne gesehen.
+          </Card>
+        </Flex>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
+        <footer>
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            Powered by me
           </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        </footer>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 1rem;
 }
 .navbarItems {
     display: flex;
@@ -36,8 +37,28 @@
     display: none;
 }
 
+.navbarTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 @media only screen and (max-width: media.$mobile-breakpoint) {
     .navbarMenu {
+        display: inherit;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .navbarItems {
+        flex-direction: column;
+    }
+    .navbarItems {
+        display: none;
+    }
+    .navbarItemsOpen {
         display: inherit;
     }
 }

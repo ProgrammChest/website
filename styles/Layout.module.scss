@@ -1,0 +1,103 @@
+@use 'colors';
+@use 'media';
+
+.textBig {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+.textNormal {
+    font-size: 1rem;
+}
+.textSmall {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.textCaption {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: colors.$caption;
+}
+
+@media only screen and (max-width: media.$mobile-breakpoint) {
+    .textBig {
+        font-size: 2rem;
+    }
+    .textNormal {
+        font-size: 0.8rem;
+    }
+    .textSmall {
+        font-size: 0.8rem;
+    }
+    .textCaption {
+        font-size: 1rem;
+    }
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.containerSmall {
+    max-width: media.$small-breakpoint;
+}
+
+.containerMedium {
+    max-width: media.$medium-breakpoint;
+}
+
+.containerLarge {
+    max-width: media.$large-breakpoint;
+}
+
+.containerSpaceSmall {
+    padding: 2rem 0;
+}
+
+.containerSpaceMedium {
+    padding: 4rem 0;
+}
+
+.containerSpaceLarge {
+    padding: 6rem 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    border: 2px solid colors.$primary;
+    border-radius: 1rem;
+    max-width: 15rem;
+}
+
+.cardTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardIcon {
+    text-align: center;
+}
+
+.cardContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,12 +1,12 @@
-import React, { ButtonHTMLAttributes, PropsWithChildren } from 'react'
+import React, { PropsWithChildren } from 'react'
 import classes from '../styles/Button.module.scss';
 
-type ButtonProps = PropsWithChildren<React.HTMLAttributes<HTMLButtonElement> & {
+type LinkProps = PropsWithChildren<React.AnchorHTMLAttributes<HTMLAnchorElement> & {
     variant?: 'primary' | 'secondary'
     size?: 'small' | 'normal' | 'large'
 }>
 
-export default function Button({variant, className, size, ...props}: ButtonProps) {
+export default function Link({variant, className, size, ...props}: LinkProps) {
     var currentClass = className ?? '';
     currentClass += ' ' + classes.btn;
     switch (size) {
@@ -19,6 +19,6 @@ export default function Button({variant, className, size, ...props}: ButtonProps
     }
     
     return (
-        <button className={currentClass} {...props} />
+        <a className={currentClass} {...props} />
     )
 }
