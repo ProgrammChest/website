@@ -1,37 +1,45 @@
 @use "colors";
 
-$button-color: (
-    "primary": colors.$primary,
-    "secondary": transparent
-);
-
 .btn {
-    padding: 0.5rem 4rem;
-    border-radius: 0.8rem;
-    border: 0;
+  padding: 0.5rem 4rem;
+  border-radius: 0.8rem;
+  border: 0;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btnPrimary {
+  color: colors.$text;
+  background: colors.$primary;
+  border: 4px solid colors.$primary;
+  &:hover {
+    background: colors.$text;
     color: colors.$primary;
-    background: transparent;
-    cursor: pointer;
-    border: 4px solid colors.$primary;
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin: 0.5rem;
-    text-decoration: none;
-    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
-    &:hover {
-        background: colors.$primary;
-        color: colors.$text;
-    }
+  }
+}
+
+.btnSecondary {
+  color: colors.$primary;
+  background: transparent;
+  border: 4px solid colors.$primary;
+  &:hover {
+    background: colors.$primary;
+    color: colors.$text;
+  }
 }
 
 .btnSmall {
-    padding: 0.5rem 2rem;
-    font-size: 1rem;
-    border-width: 2px;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border-width: 2px;
 }
 
 .btnLarge {
-    padding: 0.5rem 6rem;
-    font-size: 2rem;
-    border-width: 6px;
+  padding: 0.5rem 6rem;
+  font-size: 2rem;
+  border-width: 6px;
 }

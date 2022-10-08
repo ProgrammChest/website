@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import Button from "../components/Button";
+import Button from "../components/NewButton";
 import Icon from "../components/Icon";
 import Card from "../components/layouts/Card";
 import Container from "../components/layouts/Container";
@@ -27,14 +27,18 @@ const Home: NextPage = () => {
           <Text variant="caption">
             Dem größten Programmier-Discord im deutschsprachigen Raum!
           </Text>
-          <Link href="https://invite.programm-chest.dev" variant="primary">Join</Link>
+          <Button variant="primary">Join</Button>
+          <Flex>
+            <Link href="https://invite.programm-chest.dev" variant="primary">Join</Link>
+            <Link href="https://invite.programm-chest.dev" variant="secondary">Erkunden</Link>
+          </Flex>
         </Container>
 
         <Flex alignItems="stretch" flexWrap="wrap" justifyContent="center" gap={12}>
           <Card title="Hilfsbereite Community" icon="live_help">
             Da wir viele Programmierer aus den unterschiedlichsten Bereichen und Themengebieten bei uns versammeln, wird sich sicherlich jemand finden, der die passende Lösung für dein Problem bereithält
           </Card>
-          
+
           <Card title="Erfahrung" icon="schedule">
             Seit nun mehr als 3 Jahren kümmert sich unser Team gemeinsam mit unserer Community um Anliegen anderer Mitglieder.
           </Card>

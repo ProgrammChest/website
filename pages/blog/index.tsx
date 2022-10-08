@@ -22,7 +22,7 @@ export default function Blog() {
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua. At vero eos et accusam et
               </p>
-              <div><Icon>java</Icon> Java</div>
+              <Flex alignItems="center"><Icon>coffee</Icon> Java</Flex>
               <Link size="small" href="#">
                 Read more
               </Link>

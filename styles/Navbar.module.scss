@@ -24,13 +24,20 @@
     color: colors.$text;
     text-decoration: none;
     font-weight: 600;
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.2rem;
+    &:hover {
+        border-bottom: 0.2rem solid colors.$text;
+        padding-bottom: 0;
+    }
 }
 .navbarCurrentLink {
     color: colors.$primary;
     text-decoration: none;
-    border-bottom: 0.1rem solid colors.$primary;
+    border-bottom: 0.2rem solid colors.$primary;
     padding-bottom: 0;
+    &:hover {
+        border-bottom: 0.2rem solid colors.$primary;
+    }
 }
 
 .navbarMenu {

@@ -9,15 +9,25 @@ type IconProps = PropsWithChildren<
   }
 >;
 
-export default function Icon({ className, ...props }: IconProps) {
+export default function Icon({ className, children, ...props }: IconProps) {
   return (
     <span
-      className={`material-symbols-outlined ${classes.icon} ${className ?? ""}`}
-      style={{
-        fontSize: props.size ?? 24,
-        color: props.color === "primary" ? variables.primaryColor : "inherit",
-      }}
+      className={`material-symbols-outlined ${className ?? ""}}`}
       {...props}
-    />
+    >
+      <style jsx>
+        {`
+        span {
+          font-size: ${props.size ?? 24}px;
+          user-select: none;
+        }
+        span:hover {
+          cursor: pointer;
+          color: green;
+        }
+      `}
+      </style>
+      {children}
+    </span>
   );
 }

@@ -9,6 +9,14 @@ type LinkProps = PropsWithChildren<React.AnchorHTMLAttributes<HTMLAnchorElement>
 export default function Link({variant, className, size, ...props}: LinkProps) {
     var currentClass = className ?? '';
     currentClass += ' ' + classes.btn;
+    switch (variant) {
+        case "secondary":
+            currentClass += " " + classes.btnSecondary;
+            break;
+        default:
+            currentClass += " " + classes.btnPrimary;
+            break;
+    }
     switch (size) {
         case 'small':
             currentClass += ' ' + classes.btnSmall;
