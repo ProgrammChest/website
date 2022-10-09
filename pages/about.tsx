@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <main>
         <Container size="large">
           <Image width={256} height={256} src="/logo.svg" alt="logo" />
-          <Text variant="big">Willkommen auf Programm Chest,</Text>
+          <Text variant="xxl">Willkommen auf Programm Chest,</Text>
           <Text variant="caption">
             dem größten Programmier-Discord im deutschsprachigen Raum!
           </Text>

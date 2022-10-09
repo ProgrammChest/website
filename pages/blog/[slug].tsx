@@ -23,7 +23,7 @@ export default function BlogEntry({ title, imageUrl }: Props) {
             height={500}
             src={imageUrl}
           />
-          <Text variant="big">{title}</Text>
+          <Text variant="xxl">{title}</Text>
         </div>
       </Container>
     </>

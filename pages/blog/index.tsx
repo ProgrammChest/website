@@ -4,7 +4,7 @@ import HomeNavbar from "../../layouts/HomeNavbar";
 import Text from "../../components/layouts/Text";
 import Flex from "../../components/layouts/Flex";
 import Card from "../../components/layouts/Card";
-import Link from "../../components/Link";
+import Anchor from "../../components/Anchor";
 import Icon from "../../components/Icon";
 
 export default function Blog() {
@@ -13,7 +13,7 @@ export default function Blog() {
       <HomeNavbar />
 
       <Container size="large">
-        <Text variant="big">Blog</Text>
+        <Text variant="xxl">Blog</Text>
         <Flex flexWrap="wrap" gap={32} justifyContent="center">
           {Array.from({ length: 10 }).map((_, i) => (
             <Card key={i} title="Title">
@@ -23,9 +23,9 @@ export default function Blog() {
                 aliquyam erat, sed diam voluptua. At vero eos et accusam et
               </p>
               <Flex alignItems="center"><Icon>coffee</Icon> Java</Flex>
-              <Link size="small" href="#">
+              <Anchor size="small" href="#">
                 Read more
-              </Link>
+              </Anchor>
             </Card>
           ))}
         </Flex>

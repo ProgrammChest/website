@@ -1,7 +1,8 @@
 import Image from "next/image";
-import React from "react";
-import Link from "../components/Link";
+import Link from "next/link";
+import Anchor from "../components/Anchor";
 import Navbar from "../components/Navbar";
+import Text from "../components/layouts/Text";
 
 const HomeNavbar = ({title} : {title ?: string}) => {
   return (
@@ -9,13 +10,15 @@ const HomeNavbar = ({title} : {title ?: string}) => {
       header={
         <>
           <Image width={32} height={32} src="/logo.svg" alt="logo" />
-          <span>{title ?? 'Programm Chest'}</span>
+          <Link href="/">
+            <Text variant="l" style={{cursor: 'pointer'}}>{title ?? 'Programm Chest'}</Text>
+          </Link>
         </>
       }
       trailing={
-        <Link href="https://invite.programm-chest.dev" size="small">
+        <Anchor href="https://invite.programm-chest.dev" size="small">
           Join
-        </Link>
+        </Anchor>
       }
       items={[
         {

@@ -6,9 +6,10 @@ type FlexProps = PropsWithChildren<{
   alignItems?: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline'
   flexWrap?: 'nowrap' | 'wrap' | 'wrap-reverse'
   gap?: number
+  flex?: number
 }>
 
-export default function Flex({gap, flexDirection, justifyContent, alignItems, children, flexWrap}: FlexProps) {
+export default function Flex({ flex, gap, flexDirection, justifyContent, alignItems, children, flexWrap }: FlexProps) {
   return (
     <div style={{
       display: 'flex',
@@ -16,7 +17,9 @@ export default function Flex({gap, flexDirection, justifyContent, alignItems, ch
       justifyContent: justifyContent,
       alignItems: alignItems,
       flexWrap: flexWrap,
-      gap: gap
+      gap: gap,
+      width: '100%',
+      flex: flex
     }}>
       {children}
     </div>

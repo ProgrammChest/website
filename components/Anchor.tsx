@@ -1,13 +1,13 @@
 import styled from '@emotion/styled'
 import { primary, text } from './variables';
 
-type ButtonProps = {
+type AnchorProps = {
     variant?: "primary" | "secondary";
     size?: "small" | "normal" | "large";
 };
 
 
-const Button = styled.button<ButtonProps>`
+const Anchor = styled.a<AnchorProps>`
     padding: 0.5rem 4rem;
     border-radius: 0.8rem;
     border: 0;
@@ -59,4 +59,4 @@ const Button = styled.button<ButtonProps>`
     }}
 `;
 
-export default Button;
+export default Anchor;
